@@ -5,22 +5,26 @@ DISCLAIMER
 
 
 
+
+
+
 Hope you enjoy    :)
 
-Check out
+Check out  >>   blackarch.org
 
 
-d ss.  d      d s.     sSSs. d     S d s.   d ss.    sSSs. d    d        sSSSs   d ss.    sSSSs  
-S    b S      S  ~O   S      S    P  S  ~O  S    b  S      S    S       S     S  S    b  S     S 
-S    P S      S   `b S       Ssss'   S   `b S    P S       S    S      S       S S    P S        
-S sSS' S      S sSSO S       S   s   S sSSO S sS'  S       S sSSS      S       S S sS'  S        
-S    b S      S    O S       S    b  S    O S   S  S       S    S .ss  S       S S   S  S    ssSb
-S    P S      S    O  S      S     b S    O S    S  S      S    S SSSz  S     S  S    S  S     S 
-P `SS  P sSSs P    P   "sss' P     P P    P P    P   "sss' P    P 'ZZ'   "sss"   P    P   "sss"  
 
+ _     _            _                  _                      
+| |   | |          | |                | |                     
+| |__ | | __ _  ___| | ____ _ _ __ ___| |__    ___  _ __ __ _ 
+| '_ \| |/ _` |/ __| |/ / _` | '__/ __| '_ \  / _ \| '__/ _` |
+| |_) | | (_| | (__|   < (_| | | | (__| | | || (_) | | | (_| |
+|_.__/|_|\__,_|\___|_|\_\__,_|_|  \___|_| |_(_)___/|_|  \__, |
+                                                         __/ |
+                                                        |___/ 
 
                   An Archlinux Pentesting Distribution 
-
+		
 
 
 	Join   #blackarch   on    irc.freenode.net  for any help reguarding blackarch distro
