@@ -1,19 +1,12 @@
 DISCLAIMER
 
 * This is not completely my sole configuration
-* I mushed peoples configs together to make something I love     :)
+* I took a little here and there from different people's configs and made something I 
+* love   :)
 
-
-
-
-
-
-Hope you enjoy    :)
-
-Check out  >>   blackarch.org
-
-
-
+===============================
+Hope you enjoy   
+ * Dont forget to check out  >>   blackarch.org   *
  _     _            _                  _                      
 | |   | |          | |                | |                     
 | |__ | | __ _  ___| | ____ _ _ __ ___| |__    ___  _ __ __ _ 
@@ -24,21 +17,12 @@ Check out  >>   blackarch.org
                                                         |___/ 
 
                   An Archlinux Pentesting Distribution 
-		
-
 
 	Join   #blackarch   on    irc.freenode.net  for any help reguarding blackarch distro
 
-
-
-
-
-
-
-
    ____         ___                    
-   ` //        -   -_,            ,,   
- '  //        (  ~/||             ||   
+** ` //        -   -_,            ,,   
+**  //        (  ~/||             ||   
 \\  \\        (  / ||  ,._-_  _-_ ||/\\
 ||   )) <>-<>  \/==||   ||   ||   || ||
 ||  //         /_ _||   ||   ||   || ||
