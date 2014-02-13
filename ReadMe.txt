@@ -3,10 +3,10 @@ DISCLAIMER
 * I took a little here and there from different people's 
 * configs and made something I love   :)
 
-#################################################
-# Hope you enjoy 				#
-# Dont forget to check out  >>   blackarch.org  #
-#################################################
+##################################################
+## Hope you enjoy 				##
+## Dont forget to check out  >>   blackarch.org ##
+##################################################
  _     _            _                  _                      
 | |   | |          | |                | |                     
 | |__ | | __ _  ___| | ____ _ _ __ ___| |__    ___  _ __ __ _ 
