@@ -30,9 +30,13 @@ DISCLAIMER
                                                          __/ |
                                                         |___/ 
 
-                  An Archlinux Pentesting Distribution 
+ An Archlinux Pentesting Distribution 
 
-	Join   #blackarch   on    irc.freenode.net  for any help regarding blackarch distro
+	Join   #blackarch   on    
+			
+			irc.freenode.net  for any help 
+					
+					regarding blackarch distro
 
    ____         ___                    
 ** ` //        -   -_,            ,,   
