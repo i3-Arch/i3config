@@ -9,9 +9,12 @@ DISCLAIMER
 ##################################################
 
 
-1. Make sure you have i3-wm and i3status an stuff. ( configure your i3status.conf on your own )
-2. Let me know any feedback   :)
-3. I will update as needed 
+1. Make sure you have i3-wm and i3status an stuff.
+ ( configure your i3status.conf on your own )
+
+		2. Let me know any feedback   :)
+
+				3. I will update as needed 
 
 
 
