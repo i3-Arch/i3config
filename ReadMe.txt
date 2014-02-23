@@ -7,6 +7,17 @@ DISCLAIMER
 ## Hope you enjoy 				##
 ## Dont forget to check out  >>   blackarch.org ##
 ##################################################
+
+
+1. Make sure you have i3-wm and i3status an stuff. ( configure your i3status.conf on your own )
+2. Let me know any feedback   :)
+3. I will update as needed 
+
+
+
+
+
+
  _     _            _                  _                      
 | |   | |          | |                | |                     
 | |__ | | __ _  ___| | ____ _ _ __ ___| |__    ___  _ __ __ _ 
