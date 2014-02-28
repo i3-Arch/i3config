@@ -9,7 +9,7 @@
 # prompt
 autoload -U promptinit
 promptinit
-prompt sorin
+prompt bigfade 'red white grey white'
 
 # Completion
 autoload -U bashcompinit
@@ -145,7 +145,7 @@ alias mkdir='mkdir -p'
 alias ..='cd ..'
 alias du='du -kh'
 # alias df='di'
-#alias effacer="mv -t ~/.local/share/Trash/files --backup=t"
+# alias effacer="mv -t ~/.local/share/Trash/files --backup=t"
 alias usinit="sudo invoke-rc.d"
 alias modprobe="sudo modprobe"
 alias ncmpc="ncmpcpp"
@@ -240,8 +240,8 @@ export VISUAL=/usr/bin/vim
 #   echo $$ > /dev/cgroup/cpu/user/$$/tasks
 #   echo "1" > /dev/cgroup/cpu/user/$$/notify_on_release
 #fi
-alias vpn="cd /etc/openvpn ; sudo openvpn --config Netherlands.ovpn"
-fortune -s ; alsi -c1 white -c2 white
+# alias vpn="cd /etc/openvpn ; sudo openvpn --config Netherlands.ovpn"
+# fortune -s ; alsi -c1 white -c2 white
 # alsi -c1 white -c2 white ; fortune -s
 # fortune -s | cowsay -f /usr/share/cows/eyes.cow
 # bash ./test.sh
