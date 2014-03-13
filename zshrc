@@ -231,7 +231,7 @@ export PAGER=/usr/bin/vimpager
 export EDITOR=/usr/bin/vim
 export VISUAL=/usr/bin/vim
 # Transparency
-[ -n "$XTERM_VERSION" ] && transset-df -a >/dev/null
+# [ -n "$XTERM_VERSION" ] && transset-df -a >/dev/null
 #export VDPAU_NVIDIA_NO_OVERLAY=1
 # export WINEARCH=win32
 
