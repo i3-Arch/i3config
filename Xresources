@@ -1,5 +1,16 @@
 xterm*faceName: Dejavu Sans Mono:style=Book:antialias=true:hinting=medium
 xterm*faceSize: 10
+URxvt.scrollBar: false
+URxvt.font: xft:Dejavu Sans Mono:bold:size=11:antialias=true
+URxvt.letterSpace: -1
+URxvt.url-launcher: /usr/bin/firefox
+URxvt.matcher.button: 1
+URxvt.perl-ext-common: default,tabbedex,vtwheel,font-size,matcher,clipboard
+URxvt.keysym.C-Up:     perl:font-size:increase
+URxvt.keysym.C-Down:   perl:font-size:decrease
+URxvt.keysym.C-S-Up:   perl:font-size:incglobal
+URxvt.keysym.C-S-Down: perl:font-size:decglobal
+URxvt.tabbed.new-button: false
 
 *foreground: #DDCCBB
 
