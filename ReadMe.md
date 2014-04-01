@@ -16,7 +16,7 @@
 
 						3. I will update as needed 
 
-				![Alt text](/preview.jpg "Screenshots")
+				![Alt text](i3-Arch/i3config/preview.jpg "Screenshots")
 
 
  An Archlinux Pentesting Distribution 
