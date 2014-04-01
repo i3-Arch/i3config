@@ -16,10 +16,7 @@
 
 						3. I will update as needed 
 
-
-						:: SCREENSHOTS ::
-			![ScreenShot](https://raw.githubusercontent.com/i3-Arch/i3config/master/preview.jpg)
-
+				![Alt text](https://raw.githubusercontent.com/i3-Arch/i3config/master/preview.jpg "Screenshots")
 
 
  An Archlinux Pentesting Distribution 
