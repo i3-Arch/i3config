@@ -21,7 +21,8 @@
 ![ScreenShot](Screenshots/preview3.png "Terminator setup")
 ![ScreenShot](Screenshots/preview4.png "Urxvt setup")
 
- An Archlinux Pentesting Distribution 
+Try Out An Archlinux Pentesting Distribution 
+		Called Blackarch @ http://blackarch.org/download.html
 
 	Join   #blackarch   on    
 			
