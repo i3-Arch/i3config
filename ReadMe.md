@@ -16,7 +16,7 @@
 
 						3. I will update as needed 
 
-				![Alt text](preview.jpg "Screenshots")
+![ScreenShot](Screenshots/preview.jpg)
 
 
  An Archlinux Pentesting Distribution 
