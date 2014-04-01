@@ -16,8 +16,10 @@
 
 						3. I will update as needed 
 
-![ScreenShot](Screenshots/preview.jpg)
-
+![ScreenShot](Screenshots/preview.png "Clean")
+![ScreenShot](Screenshots/preview2.png "Fake Dirty")
+![ScreenShot](Screenshots/preview3.png "Terminator setup")
+![ScreenShot](Screenshots/preview4.png "Urxvt setup")
 
  An Archlinux Pentesting Distribution 
 
