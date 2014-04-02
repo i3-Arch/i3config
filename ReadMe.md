@@ -20,7 +20,7 @@
 ![ScreenShot](Screenshots/preview2.png "Fake Dirty")
 ![ScreenShot](Screenshots/preview3.png "Terminator Setup")
 ![ScreenShot](Screenshots/preview4.png "Urxvt Setup")
-![ScreenShot](Screenshots/preiview5.png " Urxvt Setup ")
+![ScreenShot](Screenshots/preview5.png " Urxvt Setup ")
 
 Try Out An Archlinux Pentesting Distribution 
 		Called Blackarch @ http://blackarch.org/download.html
