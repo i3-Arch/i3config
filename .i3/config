@@ -37,6 +37,9 @@ workspace_auto_back_and_forth yes
 bindsym $mod+q kill
 #bindsym $mod+Shift+Q kill
 
+#Transparency
+bindsym $mod+i exec transset-df -a
+
 # start dmenu (a program launcher)
 bindsym $mod+p exec --no-startup-id dmenu_run -b  -fn 'Dejavu Sans Mono:10' -nb '#111111' -nf '#00AFDA' -sb '#111111' -sf '#E7E8E9'
 
@@ -262,6 +265,6 @@ bar {
 ## BACKGROUND OPTIONS (STARTED IN .XINITRC)
 
 # AUTOSTART
-exec --no-startup-id xterm -e tmux
+# exec --no-startup-id terminator -e tmux
 exec --no-startup-id xset dpms 600
 exec --no-startup-id sh ~/.fehbg
