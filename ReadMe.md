@@ -17,6 +17,7 @@
 						3. I will update as needed 
 
 
+![ScreenShot](Screenshots/preview6.png " Transparency")
 ![ScreenShot](Screenshots/preview.png "Clean")
 ![ScreenShot](Screenshots/preview2.png "Fake Dirty")
 ![ScreenShot](Screenshots/preview3.png "Terminator Setup")
