@@ -13,10 +13,7 @@ fi
 #exec pa-applet &
 exec xscreensaver &
 xcompmgr -c -f -r 28 D 10 &
-sleep 1
 xrdb merge ./.Xresources
-# exec feh --bg-scale ~/Downloads/Pictures/Arch_Linux_Darkwave_by_BalanceST.jpg & 
-# feh --bg-scale ~/Downloads/Pictures/minimalistic-linux-arch-linux-fresh-new-hd-wallpaper.jpg &
 exec i3
 # exec gnome-session
 # exec startkde
