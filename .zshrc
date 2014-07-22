@@ -5,11 +5,10 @@
 # _ / /_ ___) |  _  |  _ <| |___ 
 #(_)____|____/|_| |_|_| \_\\____|
 #
-# added to end    [ -n "$XTERM_VERSION" ] && transset-df -a >/dev/null
-# prompt
 autoload -U promptinit
 promptinit
-prompt bigfade 'red white grey white'
+#prompt bigfade 'red white grey white'
+prompt sorin
 
 # Completion
 autoload -U bashcompinit
@@ -79,13 +78,6 @@ setopt hist_ignore_all_dups
 # correction
 setopt correctall
 
-# Welcome message... #################################################
-   ##                            
-#if [ -x /usr/bin/fortune ]; then                                   ##
-#    /usr/bin/fortune -s     # makes our day a bit more fun.... :-) ##
-#fi                                                                 ##
-#####################################################################
-
 # better ls ;)
 function ll()
 { ls -l "$@"| egrep "^d" ; ls -lXB "$@" 2>&-| egrep -v "^d|total "; }
@@ -143,15 +135,7 @@ export GREP_COLOR=31
 alias grep='egrep --color=auto'
 alias mkdir='mkdir -p'
 alias ..='cd ..'
-alias du='du -kh'
-# alias df='di'
-# alias effacer="mv -t ~/.local/share/Trash/files --backup=t"
-alias usinit="sudo invoke-rc.d"
-alias modprobe="sudo modprobe"
-alias ncmpc="ncmpcpp"
-alias vi="vim"
 alias svi="sudo vim"
-alias sgvi="sudo gvim"
 alias dezip="unfoo"
 alias rmmod="sudo rmmod"
 alias cpr="cp -R"
@@ -165,10 +149,9 @@ alias pac="sudo pacman"
 alias pacS="sudo pacman -S"
 alias pacR="sudo pacman -R"
 alias pacRs="sudo pacman -Rs"
-alias pacSyu="sudo pacman -Syu"
-alias pacSu="sudo pacman -Su"
-alias pacRd="sudo pacman -Rd"
+alias pacSyu="sudo pacman -Syyu"
 alias pacSs="pacman -Ss"
+alias pacSg="pacman -Sg"
 alias pacQs="pacman -Qs"
 alias pacSi="pacman -Si"
 alias pacQi="pacman -Qi"
@@ -178,7 +161,6 @@ alias pacQtd="sudo pacman -Qtd"
 alias pacScc="sudo pacman -Scc" 
 alias pacU="sudo pacman -U"
 alias pacaurS="pacaur -S"
-alias pacaurSy="pacaur -Syyu"
 
 # The 'ls' family (this assumes you use the GNU ls)
 alias la='ls -Al'               # show hidden files
@@ -193,13 +175,6 @@ alias lm='ls -al |more'         # pipe through 'more'
 
 # Paths
 export PATH=$PATH:/home/cocky/bin/:/sbin/:/usr/sbin/:/usr/local/bin/
-
-# Keyboard
-#bindkey     "^[[3~"          delete-char
-#bindkey     "^[3;5~"         delete-char
-#bindkey     "^[[7~"          beginning-of-line
-#bindkey     "^[[8~"          end-of-line
-#bindkey     "^[[2~"          overwrite-mode
 
 typeset -A key
 
@@ -223,27 +198,10 @@ key[PageDown]=${terminfo[knp]}
 [[ -n "${key[Left]}"    ]]  && bindkey  "${key[Left]}"    backward-char
 [[ -n "${key[Right]}"   ]]  && bindkey  "${key[Right]}"   forward-char
 
-bindkey "\e[5~" history-search-backward # touche "page précédente"
-bindkey "\e[6~" history-search-forward # touche "page suivante"
+bindkey "\e[5~" history-search-backward 
+bindkey "\e[6~" history-search-forward
 
 # Pager
 export PAGER=/usr/bin/vimpager
 export EDITOR=/usr/bin/vim
 export VISUAL=/usr/bin/vim
-# Transparency
-# [ -n "$XTERM_VERSION" ] && transset-df -a >/dev/null
-#export VDPAU_NVIDIA_NO_OVERLAY=1
-# export WINEARCH=win32
-
-# Cgroups, should be included in kernel 2.6.38
-#if [ "$PS1" ] ; then  
-#   mkdir -m 0700 /dev/cgroup/cpu/user/$$ > /dev/null 2>&1
-#   echo $$ > /dev/cgroup/cpu/user/$$/tasks
-#   echo "1" > /dev/cgroup/cpu/user/$$/notify_on_release
-#fi
-# alias vpn="cd /etc/openvpn ; sudo openvpn --config Netherlands.ovpn"
-# fortune -s ; alsi -c1 white -c2 white
-# alsi -c1 white -c2 white ; fortune -s
-# fortune -s | cowsay -f /usr/share/cows/eyes.cow
-# bash ./test.sh
-# bash ./bitch.sh
