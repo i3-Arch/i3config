@@ -5,6 +5,9 @@
 # _ / /_ ___) |  _  |  _ <| |___ 
 #(_)____|____/|_| |_|_| \_\\____|
 #
+#   
+###############################
+
 autoload -U promptinit
 promptinit
 #prompt bigfade 'red white grey white'
@@ -205,3 +208,4 @@ bindkey "\e[6~" history-search-forward
 export PAGER=/usr/bin/vimpager
 export EDITOR=/usr/bin/vim
 export VISUAL=/usr/bin/vim
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
