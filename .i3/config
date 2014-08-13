@@ -17,6 +17,7 @@ set $mod Mod4
 new_window normal 
 #new_float 1pixel
 new_float normal 
+# for_window [class="\w*"] border pixel 1
 
 # HIDE EDGE BORDERS
 #hide_edge_borders <none|vertical|horizontal|both>
@@ -57,7 +58,7 @@ for_window [window_role="pop-up"] floating enable,move absolute center
 # ASSIGN WORKSPACE VARIABLES
 set $WS1 1|term
 set $WS2 2|web
-set $WS3 3|weechat
+set $WS3 3|chat
 set $WS4 4|monitor
 set $WS5 5|media
 set $WS6 6|stuff
@@ -149,7 +150,7 @@ bindsym $mod+6 workspace $WS6
 bindsym $mod+7 workspace $WS7
 bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
-bindsym $mod+0 workspace 10:sample name
+bindsym $mod+0 workspace 10
 
 # move focused container to workspace
 bindsym $mod+Shift+exclam move container to workspace $WS1
@@ -230,9 +231,9 @@ client.urgent			#383a3b #383a3b  #ee0000
 ###  ADDED KEY BINDINGS  ###
 bindsym $MOD+SHIFT+f exec thunar
 bindsym $MOD+SHIFT+Return exec xterm
-#bindsym $MOD+SHIFT+x exec i3lock -c 424242 -n
-bindsym $MOD+SHIFT+x exec i3lock -d -i /home/t00r/wallpapers/arch_linux_wallpaper_by_wavering_radiant-d6ivbsy.png #-n
-#bindsym $MOD+SHIFT+b exec --no-startup-id iceape 
+# bindsym $MOD+SHIFT+x exec i3lock -c 424242 -n
+# bindsym $MOD+SHIFT+x exec i3lock -d -i /home/t00r/wallpapers/arch_linux_wallpaper_by_wavering_radiant-d6ivbsy.png #-n
+# bindsym $MOD+SHIFT+b exec --no-startup-id iceape 
 bindsym $MOD+SHIFT+b exec --no-startup-id firefox
 #bindsym $MOD+SHIFT+m exec leafpad 
 bindsym $MOD+SHIFT+m exec --no-startup-id mousepad
@@ -244,11 +245,12 @@ bindsym $MOD+SHIFT+Down exec amixer set Master 5.0%-
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
+# Default background = #252525
 bar {
-	status_command i3status
+	status_command $HOME/.i3/conky/conky-i3bar
 	position top
 	workspace_buttons yes
-	font pango:Dejavu Sans Mono 10 
+	font pango:Dejavu Sans Mono 9
 
   colors {
 	statusline	#999999
