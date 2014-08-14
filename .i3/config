@@ -230,7 +230,7 @@ client.urgent			#383a3b #383a3b  #ee0000
 
 ###  ADDED KEY BINDINGS  ###
 bindsym $MOD+SHIFT+f exec thunar
-bindsym $MOD+SHIFT+Return exec xterm
+bindsym $MOD+SHIFT+Return exec urxvt
 # bindsym $MOD+SHIFT+x exec i3lock -c 424242 -n
 # bindsym $MOD+SHIFT+x exec i3lock -d -i /home/t00r/wallpapers/arch_linux_wallpaper_by_wavering_radiant-d6ivbsy.png #-n
 # bindsym $MOD+SHIFT+b exec --no-startup-id iceape 
