@@ -40,9 +40,6 @@ TEXT
 
    { "full_text" : "❖ Home: ${fs_used /home} / ${fs_size /home} " , "seperator" : false  , "color" : "\#00BFFF" },
    { "full_text" : " ❖ Root: ${fs_used /} / ${fs_size /} " , "color" : "\#00BFFF" },
-   { "full_text" : " ⮉ ${upspeed wlp2s0} " , "color" : "\#00BFFF" },
-   { "full_text" : " ⮋ ${downspeed wlp2s0} " , "color" : "\#00BFFF" },
-   { "full_text" : " Signal${wireless_link_qual_perc wlp2s0}% " , "color" : "\#00BFFF" },
    { "full_text" : " ☀ Ram ${memperc}% " , "color" : ${if_match ${memperc}<90}"\#00BFFF"${else}"\#FE2E2E"${endif} },
    { "full_text" : " ${time %B %d  %r }" , "color" : "\#00BFFF"}
 
