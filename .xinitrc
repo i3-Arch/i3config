@@ -12,7 +12,7 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
 fi
 exec xscreensaver &
 xcompmgr -c -f -r 28 D 10 &
-xrdb merge ./.Xresources
+xrdb -merge ~/.Xresources
 exec i3
 # exec gnome-session
 # exec startkde
