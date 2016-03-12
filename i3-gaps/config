@@ -56,8 +56,8 @@ bindsym $mod+u border none
 for_window [window_role="pop-up"] floating enable,move absolute center
 
 # ASSIGN WORKSPACE VARIABLES
-set $WS1 . 1 . 
-set $WS2 . 2 .
+set $WS1  1
+set $WS2  2
 set $WS3  3 
 set $WS4  4 
 set $WS5  5 
@@ -256,7 +256,7 @@ bar {
 
 
 	workspace_buttons yes
-	font pango:Dejavu Sans Mono 9
+	font xft:Dejavu Sans Mono 9
 	#strip_workspace_numbers yes
 
   colors {
@@ -265,7 +265,7 @@ bar {
 	background	#252525
 	
 # class                 	border 		backgrd 	text
-        focused_workspace  #292929 		#00AFDA		#484848
+        focused_workspace  #292929 		#00AFDA		#FEFEFE
         active_workspace   #00AFDA 		#252525 	#00AFDA
         #inactive_workspace #252525 		#252525		#00AFDA
         inactive_workspace #00AFDA		#252525		#00AFDA
