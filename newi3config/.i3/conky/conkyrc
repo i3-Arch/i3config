@@ -1,0 +1,19 @@
+###    lovelybacon.deviantart.com   ####
+
+background no
+out_to_x no
+out_to_console yes
+update_interval 1
+total_run_times 0
+use_spacer none
+
+
+TEXT
+ 
+ 
+   ${if_mpd_playing} ${color1} ♫  ${mpd_artist} -  ${mpd_title} ${endif}      \
+↓  ${downspeedf wlp0s18f2u1}  ↑  ${upspeedf wlp0s18f2u1}      \
+  ${wireless_link_qual_perc wlp0s18f2u1}  ${wireless_essid wlp0s18f2u1}  \
+  ${exec amixer get Master -c 0 -M | grep -oE "[[:digit:]]*%"}      \
+  ${time %a %b %d}      \
+  ${time %I:%M %p}    \
