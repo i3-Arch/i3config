@@ -1,0 +1,266 @@
+## i3-Arch ##
+
+set $mod Mod4
+new_window normal 
+new_float normal 
+
+# HIDE EDGE BORDERS
+#hide_edge_borders <none|vertical|horizontal|both>
+hide_edge_borders both 
+
+# font for window titles. ISO 10646 = Unicode
+# font pango:Dejavu Sans Mono 10 
+font pango:FontAwesome 8.3
+
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+
+# start a terminal
+#bindsym $mod+Return exec i3-sensible-terminal
+
+# Back and Forth
+workspace_auto_back_and_forth yes
+
+# kill focused window
+bindsym $mod+q kill
+#bindsym $mod+Shift+Q kill
+
+#Transparency
+bindsym $mod+i exec transset-df -a
+
+# start dmenu (a program launcher)
+bindsym $mod+p exec --no-startup-id dmenu_run -b  -fn 'Dejavu Sans Mono:10' -nb '#111111' -nf '#00AFDA' -sb '#111111' -sf '#E7E8E9'
+
+# CHANGING BORDER STYLE
+bindsym $mod+t border normal
+bindsym $mod+y border 1pixel
+bindsym $mod+u border none
+
+# BORDERLESS CONTAINER
+#i3-msg border none 
+
+# browser pop-ups
+for_window [window_role="pop-up"] floating enable,move absolute center
+
+# customize workspace names
+set $WS1 1:
+set $WS2 2:
+set $WS3 3:
+set $WS4 4:
+set $WS5 5:
+set $WS6 6:
+set $WS7 7:
+set $WS8 8:
+set $WS9 9:
+
+# WINDOW CONTROL 
+## Float everything
+#for_window [class="[.]*"] floating enable 
+assign [class="mplayer2"] $WS6
+for_window [class="mplayer2"] floating enable
+## BROWSER ASSIGNMENT (Navigator=Iceape)
+assign [instance="dwb|Navigator|midori|Uzbl-tabbed"] $WS2
+for_window [class="Midori"] floating enable
+for_window [title="Download"] floating enable
+for_window [title="Browser"] floating enable
+for_window [title="Preferences"] floating enable
+for_window [class="Lxappearance"] floating enable
+for_window [title="Xfce-notifyd"] floating enable
+#for_window [class="URxvt"] floating enable 
+#for_window [class="URxvt"] border 1pixel
+assign [class="Thunar"] $WS7
+#for_window [class="Thunar"] floating enable 
+for_window [class="Leafpad"] floating enable 
+for_window [class="ZSNES"] floating enable
+assign [instance="mousepad|leafpad"] $WS3
+#for_window [class="Mousepad"] floating enable 
+#assign [class="Turpial" ] $WS4
+#for_window [class="Turpial" ] floating enable
+
+bindsym $MOD+Tab focus right
+
+# SCRATCHPAD CREATE
+bindsym $MOD+SHIFT+plus move scratchpad
+
+# SCRATCHPAD SHOW
+bindsym $MOD+plus scratchpad show
+
+# OPEN TERMINAL HERE (not working yet)
+#bindsym $MOD+n exec $HOME/bin/shell.sh
+
+# HANDLE POPUPS
+#popup_during_fullscreen smart
+
+# change focus
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+# move focused window
+bindsym $mod+Shift+H move left
+bindsym $mod+Shift+J move down
+bindsym $mod+Shift+K move up
+bindsym $mod+Shift+L move right
+
+# split in horizontal orientation
+bindsym $mod+bar split h
+
+# split in vertical orientation
+bindsym $mod+underscore split v
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen
+
+# change container layout (stacked, tabbed, default)
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout default
+
+# toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $mod+space focus mode_toggle
+
+# focus the parent container
+bindsym $mod+a focus parent
+
+# focus the child container
+bindsym $mod+d focus child
+
+# switch to workspace
+bindsym Mod4+1 workspace $WS1
+bindsym Mod4+2 workspace $WS2
+bindsym Mod4+3 workspace $WS3
+bindsym Mod4+4 workspace $WS4
+bindsym Mod4+5 workspace $WS5
+bindsym Mod4+6 workspace $WS6
+bindsym Mod4+7 workspace $WS7
+bindsym Mod4+8 workspace $WS8
+bindsym Mod4+9 workspace $WS9
+bindsym Mod4+0 workspace 10
+#
+# # move focused container to workspace
+bindsym Mod4+Shift+1 move container to workspace $WS1
+bindsym Mod4+Shift+2 move container to workspace $WS2
+bindsym Mod4+Shift+3 move container to workspace $WS3
+bindsym Mod4+Shift+4 move container to workspace $WS4
+bindsym Mod4+Shift+5 move container to workspace $WS5
+bindsym Mod4+Shift+6 move container to workspace $WS6
+bindsym Mod4+Shift+7 move container to workspace $WS7
+bindsym Mod4+Shift+8 move container to workspace $WS8
+bindsym Mod4+Shift+9 move container to workspace $WS9
+bindsym Mod4+Shift+0 move container to workspace 10
+
+
+# reload the configuration file
+bindsym $mod+Shift+C reload
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+R restart
+# exit i3 (logs you out of your X session)
+bindsym $mod+Shift+E exit
+
+# resize window (you can also use the mouse for that)
+mode "resize" {
+        # These bindings trigger as soon as you enter the resize mode
+
+        bindsym h resize shrink width 10 px or 10 ppt
+        bindsym j resize grow height 10 px or 10 ppt
+        bindsym k resize shrink height 10 px or 10 ppt
+        bindsym l resize grow width 10 px or 10 ppt 
+	# arrow keys #        
+	# bindsym 113 right
+#        bindsym 116 up 
+#        bindsym 111 left 
+#        bindsym 114 down 
+
+        # back to normal: Enter or Escape
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+bindsym $mod+r mode "resize"
+
+#EXAMPLE USING THE i3 bar
+# Create Log out, Reboot, Poweroff bindings
+mode "Exit >> (L)ogout, (X)eboot, (P)oweroff  (C)Reload (R)Restart" {
+        bindsym Mod1+x exec systemctl reboot
+        bindsym Mod1+l exit
+        bindsym Mod1+p exec systemctl poweroff
+        bindsym Mod1+c reload
+        bindsym Mod1+r restart
+
+        # back to normal: Enter or Escape
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+bindsym Mod4+Control+q mode "Exit >> (L)ogout, (X)eboot, (P)oweroff  (C)Reload (R)Restart"
+
+# take screenshot
+# bindsym Print exec scrot '%Y-%m-%d-%t_$wx$h.png' -e 'mv $ $f ~/images/'
+bindsym Print exec scrot 'Screenshot - %Y-%m-%d--%_$wx$h_scrot.png' -e 'mv $f ~/images/'
+
+# colors
+
+# class                 border  backgr.    text
+## LIME GREEN ACTIVE BORDER
+client.focused			#21b4Db #00afda	 #484848
+## BLUE ACTIVE BORDER  
+#client.focused			#2b6cc4 #2b6cc4	 #111111
+## RED ACTIVE BORDER
+#client.focused			#bf3f34 #bf3f34	 #111111
+## LIGHTER RED ACTIVE BORDER
+#client.focused			#cc5555 #cc5555  #111111
+client.unfocused		#444444 #444444  #00AFDA
+client.focused_inactive         #444444 #444444  #2c2c2f
+client.urgent			#383a3b #383a3b  #ee0000
+
+
+###  ADDED KEY BINDINGS  ###
+bindsym $MOD+SHIFT+f exec thunar
+bindsym $MOD+SHIFT+Return exec urxvt
+# bindsym $MOD+SHIFT+x exec i3lock -c 424242 -n
+# bindsym $MOD+SHIFT+x exec i3lock -d -i /home/t00r/wallpapers/arch_linux_wallpaper_by_wavering_radiant-d6ivbsy.png #-n
+# bindsym $MOD+SHIFT+b exec --no-startup-id iceape 
+bindsym $MOD+SHIFT+b exec --no-startup-id firefox
+#bindsym $MOD+SHIFT+m exec leafpad 
+bindsym $MOD+SHIFT+m exec --no-startup-id mousepad
+
+# VOLUME ADJUSTMENT
+bindsym $MOD+SHIFT+Up exec amixer set Master 5.0%+
+bindsym $MOD+SHIFT+Down exec amixer set Master 5.0%-
+
+gaps inner 20
+gaps outer 20
+# Start i3bar to display a workspace bar (plus the system information i3status
+# finds out, if available)
+# Default background = #252525
+bar {
+    status_command conky -c $HOME/.i3/conky/conkyrc
+	mode dock
+	position top
+	font pango:open sans 8
+	strip_workspace_numbers yes
+
+  colors {
+	statusline	#00BFFF
+	separator	#00AFDA
+	background	#252525
+	
+# class                 	border 		backgrd 	text
+        focused_workspace  #292929 		#00AFDA		#FEFEFE
+        active_workspace   #00AFDA 		#252525 	#00AFDA
+        #inactive_workspace #252525 		#252525		#00AFDA
+        inactive_workspace #00AFDA		#252525		#00AFDA
+		urgent_workspace   #252525 		#252525 	#c7a551
+   }
+ 
+}
+## BACKGROUND OPTIONS (STARTED IN .XINITRC)
+
+# AUTOSTART
+# exec --no-startup-id terminator -e tmux
+exec --no-startup-id xset dpms 600
+exec --no-startup-id sh ~/.fehbg
