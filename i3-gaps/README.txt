@@ -1,3 +1,0 @@
-1st do this.....
-
-pacaur -S i3-gaps-next-git

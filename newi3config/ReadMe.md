@@ -2,7 +2,7 @@
 
 		ttf-font-awesome 
 	
-		i3-gaps-next-git
+		i3-gaps-git
 
 
 
